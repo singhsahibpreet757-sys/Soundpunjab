@@ -62,7 +62,11 @@ p{
   <p class="status">🔧 Our website is currently under for maintenance.</p>
   <p>🚀 We’ll be coming soon — stay tuned!</p>
   <h2>Listen the music</h2>
-  <h3>e:\mp3 songs\00Kurte-Pajame-(Mr-Jatt.com).mp3</h3>
+  
+  <audio controls>
+    <source src="song.mp3" type="audio/mpeg">
+    </audio>
+
   <footer>© <span id="year"></span> My Site. All rights reserved.</footer>
 
   <script>
@@ -70,5 +74,32 @@ p{
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Custom Audio Player</title>
+</head>
+<body>
+  <h2>Custom Play / Pause Buttons</h2>
+
+  <audio id="myAudio" src="song.mp3"></audio>
+
+  <button onclick="playAudio()">Play</button>
+  <button onclick="pauseAudio()">Pause</button>
+
+  <script>
+    var audio = document.getElementById("myAudio");
+
+    function playAudio() {
+      audio.play();
+    }
+
+    function pauseAudio() {
+      audio.pause();
+    }
+  </script>
 </body>
 </html>
