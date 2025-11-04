@@ -56,18 +56,21 @@ p{
   </style>
 </head>
 <body>
-
+<div>
   <h1>Sound Punjab</h1>
-
+</div>
+<div>
   <p class="status">🔧 Our website is currently under for maintenance.</p>
   <p>🚀 We’ll be coming soon — stay tuned!</p>
-  <br>
+</div>
+<div>
   <p>Listen the music</p>
-  <br>
-  
+</div>
+<div>
   <audio controls>
     <source src="song.mp3" type="audio/mpeg">
     </audio>
+  </div>
 
   <footer>© <span id="year"></span> My Site. All rights reserved.</footer>
 
@@ -79,29 +82,3 @@ p{
 </body>
 </html>
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Custom Audio Player</title>
-</head>
-<body>
-  <h2>Custom Play / Pause Buttons</h2>
-
-  <audio id="myAudio" src="song.mp3"></audio>
-
-  <button onclick="playAudio()">Play</button>
-  <button onclick="pauseAudio()">Pause</button>
-
-  <script>
-    var audio = document.getElementById("myAudio");
-
-    function playAudio() {
-      audio.play();
-    }
-
-    function pauseAudio() {
-      audio.pause();
-    }
-  </script>
-</body>
-</html>
